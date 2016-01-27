@@ -30,7 +30,7 @@ module TCR
       _read(:gets, *args)
     end
 
-    def read_nonblock(bytes)
+    def read_nonblock(bytes, *argv, io)
       _read(:read_nonblock, bytes, blocking: false)
     end
 
